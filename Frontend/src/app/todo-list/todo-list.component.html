@@ -1,0 +1,8 @@
+<div *ngFor="let todo of todoList" class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1"  ngSwitch="changeStatus()">
+    <li class="list-group-item">{{ todo.title }}</li>
+    <li class="list-group-item">{{ todo.desc }}</li>
+    <li class="list-group-item">{{ todo.date }}</li>
+  </ul>
+</div>
